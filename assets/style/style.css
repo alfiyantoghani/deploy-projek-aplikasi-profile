@@ -1,0 +1,265 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration:none;
+    color: black;
+}
+li {
+    list-style-type: none;
+    display: flex;
+}
+header {
+    margin-top: 10px;
+}
+
+header.navbar-container nav {
+    display: flex;
+    font-weight: 600;
+    justify-content: space-between;
+    background-color: white;
+}
+
+header.navbar-container .head ul.logo li.logo-1{
+    color: #7B66FF;
+}
+
+header nav p {
+    color: #7B66FF;
+    font-weight: 600;
+    width: 200px;
+} 
+
+
+header nav ul {
+    display: flex;
+    text-align: center;
+    padding: 0;
+
+}
+header nav.head {
+    margin: 0px 20px;
+}
+
+header nav ul.nav-list {
+    margin-right: 20px;
+}
+
+header nav ul.logo li {
+    padding: 0px 2px;
+    font-size: 20px;
+    
+}
+
+header nav ul.nav-list li a {
+    padding: 14px 20px;
+    margin: 0px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+header nav ul.nav-list li a:hover {
+    color: white;
+    padding: 14px 20px;
+    margin: 0px 10px;
+    border-radius: 50px;
+    background-color: #7B66FF;
+}
+
+main .hero {
+    background-image: url(../img/hero-img.png);
+    background-size: auto;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.hero h1 {
+    font-size: 62px;
+    color: #7B66FF;
+    margin-bottom: 20px
+}
+
+.hero p {
+    color: #B2C2C5;
+    font-size: 24px;
+    font-weight: 500;
+}
+.hero ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+.hero ul li {
+    margin: 0px 10px;
+    
+}
+
+.hero ul li a {
+    font-weight: 500;
+    padding: 14px 33px;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    background-color: #7B66FF;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.hero ul li a:hover {
+    color: #7B66FF;
+    font-weight: 600;
+    padding: 14px 33px;
+    border: 3px solid #B2C2C5;
+    border-radius: 30px;
+
+    background-color: #ffffff;
+}
+
+.specialist {
+    text-align: center;
+    background-color: #7B66FF;
+    padding: 5px 0px 20px 0px;
+}
+.about-me h2 {
+    margin-top: 7px;
+}
+.specialist .card-logo {
+    flex-direction: row;
+}
+
+
+.specialist img {
+    width: auto;
+    height: 100px;
+    margin-bottom: 5px
+}
+.specialist .card-container {
+    display: flex;
+    justify-content: space-evenly
+}
+
+.specialist .card-container .card-logo {
+    width: 130px;
+    padding: 10px 10px 8px 10px;
+    border-radius: 15px;
+    background-color: white;
+}
+.specialist .card-container .card-logo p {
+    font-weight: 500;
+    color: white;
+    padding-bottom: 15px;
+    background-color:#7B66FF;
+    margin: 0px;
+    padding-x: 10px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+/* .content .about-me {
+    width: 65%;
+} */
+
+.about-me {
+    margin: 15px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.about-me #kenalan {
+    display: flex;
+    flex-direction: column
+}
+
+
+.container-card {
+    display: flex;
+}
+.container-card .content p {
+    text-align: justify;
+}
+
+
+.about-me img {
+    height: 300px;
+    width: auto;
+}
+
+.container-card aside {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+aside th {
+    text-align: left;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #5FBDFF;
+
+  text-align: center;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .container-card {
+        flex-direction: column;
+    }
+    .container-card aside img {
+        width: 200px;
+        height: auto;
+    }
+    .about-me #kenalan {
+        align-items: center;
+    }
+    .hero h1 {
+        font-size: 37px
+    }
+
+}
+
+@media screen and (max-width: 648px) {
+    header.navbar-container nav.head {
+        flex-direction: column;
+        align-items: center;
+    }
+    header.navbar-container nav.head ul.nav-list {
+        margin: 16px 0px;
+    }
+
+}
+
+@media screen and (max-width: 565px) {
+    .hero p {
+        color: #afa7b4;
+        font-weight: 600;
+    }
+    .specialist {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .specialist h2 {
+        margin-bottom: 5px;
+    }
+    .specialist p {
+        width: 95%;
+        margin-top: 3px;
+    }
+    .specialist .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .specialist .card-container .card-logo {
+        margin: 10px 0px;
+    }
+}
